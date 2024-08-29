@@ -1,0 +1,190 @@
+body {
+  color: #000000;
+  background-color: #ffffff;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 全体 */
+h2 {
+  font-size: 34px;
+}
+
+/* ヘッダー */
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
+}
+
+header h1 {
+  font-size: 34px;
+  border: #000000 solid 1px;
+  padding: 0 20px;
+  margin: 0 0 0 20px;
+}
+
+nav a {
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: none;  
+  color: #000000;
+  margin: 0 20px;
+}
+
+/* メインビジュアル */
+#main-visual > img {
+  width: 100%;
+}
+
+/* アバウト */
+#about {
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+#about h2 {
+  text-align: center;
+  padding: 60px 0 40px;
+  margin: 0;
+}
+
+#about-flex {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
+}
+
+#about img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  margin: 0  auto;
+}
+
+#about-flex > div {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#about li {
+  font-size: 18px;
+}
+
+#about h3 {
+  font-size: 24px;
+  margin: 0 auto 18px;
+}
+
+/* ワークス */
+#works h2 {
+  text-align: center;
+  padding: 60px 0 40px;
+  margin: 0;
+}
+
+#works-flex {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#works-flex  div {
+  margin: 0 10px;
+  width: 25%;
+  padding-bottom: 60px;
+}
+
+#works-flex img {
+  width: 100%;
+}
+
+#works p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* フッター */
+footer  p {
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+footer p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* スマホ用 */
+@media screen and (max-width: 767px) {
+  /* ヘッダー */
+  header div {
+    margin: 20px auto;
+  }
+  
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav a {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+
+  /* アバウト（スマホ用） */
+  #about > h2 {
+    padding: 30px 0 20px;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  #about-flex {
+    flex-direction: column;
+  }
+
+  #about-flex img {
+    margin: 0 auto;
+  }
+
+  /* ワークス（スマホ用） */
+  #works h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  #works-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #works-flex div {
+    width: 100%;
+    margin: 0px 10px;
+    padding-bottom: 40px;
+  }
+
+  #works-flex div img {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    }
+
+  #works-flex p {
+    text-align: center;
+  }
+
+  /* フッター */
+  footer {
+
+  }
+
+}
+
+
+
+
